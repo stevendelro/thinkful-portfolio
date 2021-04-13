@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+/* Remove bullet points on unordered lists. This was a style choice. */
+ul {
+  list-style: none;
+}
+
+/* This pushes the footer to the bottom of the screen on large screen widths */
+@media (min-width: 560px) {
+  main {
+    height: 56.5vh;
+  }
+}
+
+/* NAVIGATION LINKS */
+a {
+  text-decoration: none;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  color: #144d53;
+}
+
+a:hover {
+  color: #1e737c;
+}
+
+a:visited {
+  color: #0a272a;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+/*  MAIN PAGE CONTAINER
+    This keeps the content from reaching to the edges of the
+    screens on larger screen widths.
+ */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  max-width: 750px;
+}
+
+/* TYPOGRAPHY */
+.heading-styles {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.text-styles {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+
+.main-subheading {
+  font-size: 15px;
+  color: #212121;
+}
+
+/* HEADER  */
+.namespace-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profilePicture {
+  max-height: 70px;
+}
+
+/* Increase the size of my picture on tiny screens. It fills space. */
+@media (max-width: 407px) {
+  .profilePicture {
+    max-height: 100px;
+  }
+}
+
+.namespace {
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.name {
+  color: #212121;
+  margin: 0;
+}
+
+.title {
+  color: #212121;
+  margin-top: 0;
+  font-size: 15px;
+}
+
+/* FOOTER */
+.footer-subheading {
+  font-size: 15px;
+  color: #b10000;
+}
+
+.footer-background {
+  background-color: #72727238;
+}
+
+li.contact-list-item.text-styles::marker {
+  color: #b10000;
+}
+
+a.contact-link:link {
+  color: #b10000;
+}
+
+a.contact-link:hover {
+  color: #ff3a3a;
+}
+
+a.contact-link:visited {
+  color: #6d0000;
+}
+
+.copy {
+  color: #b10000;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+}
